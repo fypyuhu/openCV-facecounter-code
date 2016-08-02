@@ -48,7 +48,7 @@ cv::CascadeClassifier faceCascade;
   //Detect the face
   faceCascade.detectMultiScale( frameGray, faces, 1.1, 2, 0, cv::Size(80,80));
 
-  std::cout << "\"{\"count\":\""<<faces.size()<<"\"}\"";
+  std::cout << "{\"count\":\""<<faces.size()<<"\"}";
 
   //If no faces are detected return 1
 	//  if (faces.size() == 0) return 1;

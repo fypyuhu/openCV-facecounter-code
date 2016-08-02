@@ -50,6 +50,9 @@ cv::CascadeClassifier faceCascade;
 
   std::cout << "\"{\"count\":\""<<faces.size()<<"\"}\"";
 
+  //If no faces are detected return 1
+	//  if (faces.size() == 0) return 1;
+
   //Number of detected faces was greater than 0.
   return 0;
   
